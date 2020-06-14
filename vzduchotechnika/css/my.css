@@ -1,0 +1,299 @@
+html {
+  overflow-x: hidden;
+}
+body{
+  position: relative;
+  font-family: 'Bangers', cursive;
+}
+/*základný grid*/
+#menu{
+	margin: auto;
+}
+#carousel{
+	margin-top:68px;
+}
+#prehlad{
+margin: auto;
+ }
+.odhlasenie{
+    margin: 15px 0px 15px 0px;
+}
+ #about{
+  background-color: #a5a8ad;  
+	margin: auto;
+  text-align: center;
+ }
+ p.about{
+  font-size:20px;
+  margin:20px;
+  margin-bottom: 40px;
+ }
+ #services{
+
+ }
+#feedback {
+    background-color: #a5a8ad;
+    margin:auto;
+}
+ #gallery{
+
+	background-color: #a5a8ad; 
+	
+ }
+ .recenze{
+    margin:25px;
+    display:inline-block;
+ }
+ .galleryitem{
+  width: 200px;
+  height: 200px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+ }
+ img{
+     display:inline-block;
+ }
+ #kontakt{
+  padding-bottom: 10px;
+
+	margin: auto;
+ }
+ #footer{
+
+
+	margin: auto;
+
+ }
+ /*elementy*/
+.box{
+	margin: auto;
+  margin-bottom: 2em;
+}
+.sluzba{
+  margin: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+
+	background-color: green;
+}
+.card{
+  border-style: none;
+}
+.nadpis{
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-weight: 800;
+  transition: 0.7s;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.nadpis:hover{
+  color: grey;
+  transition:0.7s;
+  transform: scale(1.2);
+}
+.card{
+  text-align: center;
+}
+.card_name{
+  margin: 20px;
+  text-align: center;
+  font-size: 1.5em;
+}
+.ikona{
+  text-align: center;
+  font-size: 5em;
+   transition: 0.7s;
+}
+.ikona:hover{
+  color: grey;
+  transition: 0.3s;
+  transform: scale(1.2);
+
+}
+/*menu*/
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .4s ease-out;
+}
+
+a {
+  color: #000;
+}
+
+/* header */
+
+.header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 1.7em;
+  transition: 0.4s;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  letter-spacing: 2px;
+  transition: 0.4s;
+  color: grey;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2.7em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 600px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 1200px) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+.zoom {
+  padding-left: 30px;
+  transition: transform .4s; /* Animation */
+  width: 300px;
+  height: 200px;
+}
+
+.zoom:hover {
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.map-container{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.map-container iframe{
+left:0;
+top:0;
+height:90%;
+width:100%;
+position:absolute;
+}
+.ikonka{
+ display: inline;
+}
+.location{
+  display: inline;
+  margin-left:5px;
+  margin-right:5px; 
+}
+.prava{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.login{
+ 
+    margin-left:500px;
+    padding-top:150px;
+}
+.register{
+    margin:auto;
+    width:450px;
+    margin-top:150px;
+}
